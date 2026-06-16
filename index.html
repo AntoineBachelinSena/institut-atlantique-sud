@@ -723,30 +723,58 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="bg-[#111827] border-t border-white/10">
-        <div class="max-w-4xl mx-auto px-6 py-20 text-center">
-            <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">ÉCHANGEONS</span>
-            <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3 mb-4">Contactez l’Institut</h2>
-            <p class="max-w-md mx-auto text-white/70 mb-10">Pour des partenariats stratégiques, des collaborations de recherche, des invitations ou toute demande d’information.</p>
+   <!-- CONTACT -->
+<section id="contact" class="max-w-3xl mx-auto px-6 py-20">
+    <div class="text-center mb-12">
+        <h2 class="heading-serif text-5xl leading-none tracking-tighter mb-4">Nous contacter</h2>
+        <p class="text-xl text-white/80 max-w-md mx-auto">
+            Pour toute demande de partenariat, d’intervention ou d’information sur nos travaux.
+        </p>
+    </div>
+
+    <div class="max-w-[620px] mx-auto">
+        <form action="https://formspree.io/f/xqejvejv" method="POST" class="space-y-6">
             
-            <div class="max-w-md mx-auto">
-                <div class="bg-[#0A1628] border border-white/10 rounded-3xl p-8">
-                    <div class="space-y-5 text-left">
-                        <div>
-                            <div class="text-xs uppercase tracking-widest text-white/50 mb-1.5">Email principal</div>
-                            <a href="mailto:abs@antoinebachelinsena.com" class="text-xl font-medium hover:text-[#C5A46E] transition-colors">abs@antoinebachelinsena.com</a>
-                        </div>
-                        
-                        <div class="pt-4 border-t border-white/10">
-                            <div class="text-xs uppercase tracking-widest text-white/50 mb-3">Réseaux &amp; présence</div>
-                            <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
-                                <a href="https://www.antoinebachelinsena.com" target="_blank" class="hover:text-[#C5A46E] flex items-center gap-x-2"><i class="fa-solid fa-globe w-4"></i> <span>Site personnel</span></a>
-                                <a href="https://x.com/antoinebachelin" target="_blank" class="hover:text-[#C5A46E] flex items-center gap-x-2"><i class="fa-brands fa-x-twitter w-4"></i> <span>@antoinebachelin</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Nom -->
+            <div>
+                <label class="block text-sm font-medium text-white/70 mb-2">Nom complet</label>
+                <input type="text" name="name" required 
+                       class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label class="block text-sm font-medium text-white/70 mb-2">Adresse e-mail</label>
+                <input type="email" name="email" required 
+                       class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none">
+            </div>
+
+            <!-- Sujet -->
+            <div>
+                <label class="block text-sm font-medium text-white/70 mb-2">Sujet</label>
+                <input type="text" name="subject" required 
+                       class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none">
+            </div>
+
+            <!-- Message -->
+            <div>
+                <label class="block text-sm font-medium text-white/70 mb-2">Votre message</label>
+                <textarea name="message" rows="6" required 
+                          class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-3xl px-5 py-4 text-white placeholder-white/40 outline-none resize-y"></textarea>
+            </div>
+
+            <!-- Bouton -->
+            <button type="submit" 
+                    class="w-full bg-[#C5A46E] hover:bg-[#B8955E] active:bg-[#A67C4A] transition-all text-[#0A1628] font-semibold text-lg py-4 rounded-2xl shadow-lg shadow-black/30">
+                Envoyer le message
+            </button>
+        </form>
+
+        <p class="text-center text-xs text-white/50 mt-8">
+            Nous vous répondrons dans les plus brefs délais.
+        </p>
+    </div>
+</section>
                 
                 <p class="mt-6 text-xs text-white/50">L’Institut Atlantique Sud est un think tank indépendant. Nous accueillons les échanges avec les institutions, les entreprises et les chercheurs partageant notre vision d’une souveraineté partagée dans l’Atlantique Sud.</p>
             </div>
