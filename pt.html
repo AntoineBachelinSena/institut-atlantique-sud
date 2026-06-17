@@ -1,95 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <link rel="apple-touch-icon" href="favicon.jpg">
     <link rel="shortcut icon" href="favicon.jpg">
-
-    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Institut Atlantique Sud - Think tank independente dedicado à soberania marítima, geo-economia e cooperação estratégica França-Brasil-UE no Atlântico Sul. Guiana Azul e Amazônia Azul: minerais críticos, energia offshore, segurança marítima.">
     <title>Institut Atlantique Sud | Soberania • Geo-economia • Cooperação estratégica</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .heading-serif {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
 
-        .nav-active {
-            color: #C5A46E;
-            font-weight: 600;
-        }
-
-        .dark-card {
-            background-color: #111827;
-            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
-        }
-        
-        .dark-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.02em; }
+        .nav-active { color: #C5A46E; font-weight: 600; }
+        .dark-card { background-color: #111827; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1); }
+        .dark-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
         .map-bg {
-            background-image: 
-                linear-gradient(rgba(10, 22, 40, 0.88), rgba(10, 22, 40, 0.94)),
+            background-image: linear-gradient(rgba(10, 22, 40, 0.88), rgba(10, 22, 40, 0.94)),
                 url('https://images.unsplash.com/photo-1617791160505-6f00504e3519?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-size: cover; background-position: center; background-attachment: fixed;
         }
-
-        .publication-card {
-            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
-        }
-
-        .nav-link {
-            transition: color 0.2s ease;
-        }
-        
-        .nav-link:hover {
-            color: #C5A46E;
-        }
-
-        .menu-blue {
-            background: linear-gradient(145deg, #1E3A5F, #0F2744);
-        }
-
-        .think-tank-badge {
-            background: rgba(197, 164, 110, 0.1);
-            color: #C5A46E;
-            border: 1px solid rgba(197, 164, 110, 0.3);
-        }
-
-        .lang-active {
-            background-color: #C5A46E;
-            color: #0A1628;
-            font-weight: 600;
-        }
+        .publication-card { transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); }
+        .nav-link { transition: color 0.2s ease; }
+        .nav-link:hover { color: #C5A46E; }
+        .menu-blue { background: linear-gradient(145deg, #1E3A5F, #0F2744); }
+        .think-tank-badge { background: rgba(197, 164, 110, 0.1); color: #C5A46E; border: 1px solid rgba(197, 164, 110, 0.3); }
+        .lang-active { background-color: #C5A46E; color: #0A1628; font-weight: 600; }
     </style>
 </head>
 <body class="bg-[#0A1628] text-white antialiased">
+
     <!-- NAVBAR -->
     <nav class="bg-[#0A1628]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
-                
                 <div class="flex items-center">
                     <div class="font-semibold text-2xl tracking-tight">Institut Atlantique Sud</div>
                 </div>
-
                 <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
                     <a href="#accueil" class="nav-link text-white/90 hover:text-white">Início</a>
                     <a href="#linstitut" class="nav-link text-white/90 hover:text-white">O Instituto</a>
@@ -101,14 +52,11 @@
                     <a href="#publications" class="nav-link text-white/90 hover:text-white">Publicações</a>
                     <a href="#contact" class="nav-link text-white/90 hover:text-white">Contato</a>
                 </div>
-
-                <!-- Language Switcher - PT Active -->
                 <div class="hidden md:flex items-center gap-x-1 text-xs font-medium border border-white/20 rounded-full px-1 py-1">
                     <a href="index.html" class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors">FR</a>
                     <a href="pt.html" class="px-3 py-1 rounded-full lang-active">PT</a>
                     <a href="en.html" class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors">EN</a>
                 </div>
-
                 <button id="mobile-menu-btn" class="md:hidden w-11 h-11 flex items-center justify-center text-white/80 hover:text-white transition-colors" aria-label="Abrir menu">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
@@ -116,42 +64,64 @@
         </div>
     </nav>
 
-<a href="pt.html" style="color: #0A1628; background-color: #C5A46E; padding: 6px 14px; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 6px;">PT</a>
-                    <span style="color: #5a6a8a; padding: 0 6px;">|</span>
-                    <a href="en.html" style="color: #e0e3ea; padding: 6px 14px; text-decoration: none; font-size: 14px; font-weight: 500; border-radius: 6px;">EN</a>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-[60] md:hidden">
+        <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+        <div class="absolute left-0 top-0 bottom-0 w-72 menu-blue shadow-2xl p-6 text-white overflow-y-auto flex flex-col">
+
+            <div class="flex justify-between items-center mb-8">
+                <span class="font-semibold">Institut Atlantique Sud</span>
+                <button onclick="closeMobileMenu()" class="text-white/70 hover:text-white">
+                    <i class="fa-solid fa-times text-3xl"></i>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-y-1 text-[15px] flex-1">
+                <a href="#accueil" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-home w-5"></i> <span>Início</span></a>
+                <a href="#linstitut" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-info-circle w-5"></i> <span>O Instituto</span></a>
+                <a href="#guyanableue" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-globe-americas w-5"></i> <span>Guiana Azul</span></a>
+                <a href="#amazoniebleue" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-water w-5"></i> <span>Amazônia Azul</span></a>
+                <a href="#cooperation" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-handshake w-5"></i> <span>Cooperação França-Brasil</span></a>
+                <a href="#minerais" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-gem w-5"></i> <span>Minerais Críticos &amp; Fundos Marinhos</span></a>
+                <a href="#gouvernance" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-users-cog w-5"></i> <span>Governança &amp; Parceiros</span></a>
+                <a href="#publications" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-file-alt w-5"></i> <span>Publicações</span></a>
+                <a href="#contact" onclick="closeMobileMenu()" class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3"><i class="fa-solid fa-envelope w-5"></i> <span>Contato</span></a>
+
+                <!-- Seletor de idioma — aparece UMA única vez -->
+                <div style="margin: 15px 0 10px; padding-top: 12px; border-top: 1px solid #4a5a7a;">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="index.html" style="color: #e0e3ea; padding: 6px 14px; text-decoration: none; font-size: 14px; font-weight: 500; border-radius: 6px;">FR</a>
+                        <span style="color: #5a6a8a; padding: 0 6px;">|</span>
+                        <a href="pt.html" style="color: #0A1628; background-color: #C5A46E; padding: 6px 14px; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 6px;">PT</a>
+                        <span style="color: #5a6a8a; padding: 0 6px;">|</span>
+                        <a href="en.html" style="color: #e0e3ea; padding: 6px 14px; text-decoration: none; font-size: 14px; font-weight: 500; border-radius: 6px;">EN</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="mt-auto pt-8 border-t border-white/10 mt-8 text-xs text-white/50">
-            Think tank independente<br>
-            França • Brasil • Atlântico Sul
+            <div class="mt-6 pt-6 border-t border-white/10 text-xs text-white/50">
+                Think tank independente<br>
+                França • Brasil • Atlântico Sul
+            </div>
         </div>
     </div>
-</div>
 
     <!-- HERO -->
     <section id="accueil" class="map-bg min-h-[100dvh] flex items-center relative">
         <div class="max-w-6xl mx-auto px-6 pt-12 pb-20">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 items-center">
-                
                 <div class="lg:col-span-7 max-w-3xl">
                     <h1 class="text-6xl md:text-7xl leading-[1.05] tracking-tighter font-semibold heading-serif mb-6">
                         Institut<br>Atlantique Sud
                     </h1>
-                    
                     <p class="text-2xl md:text-3xl text-white/90 leading-tight tracking-tight mb-8">
                         Pela soberania, a geo-economia e a cooperação estratégica no Atlântico Sul.
                     </p>
-                    
                     <div class="max-w-xl space-y-5 text-lg text-white/80 mb-10">
                         <p>A <span class="font-semibold text-white">Guiana Azul</span> e a <span class="font-semibold text-white">Amazônia Azul</span> brasileira formam uma janela estratégica única no século XXI.</p>
-                        
                         <p>A Europa depende da China em <span class="font-semibold text-[#C5A46E]">97 %</span> para magnésio, <span class="font-semibold text-[#C5A46E]">71 %</span> para gálio e <span class="font-semibold text-[#C5A46E]">90-98 %</span> para terras raras.</p>
-                        
                         <p class="text-white">Juntas, a Guiana Azul e a Amazônia Azul podem se tornar a alavanca de uma soberania europeia e brasileira em minerais críticos, energia offshore e segurança marítima.</p>
                     </div>
-
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#publications" class="inline-flex items-center justify-center gap-x-3 bg-[#C5A46E] hover:bg-[#B8955E] active:bg-[#A67C4A] transition-all text-[#0A1628] font-semibold px-8 h-14 rounded-2xl text-base shadow-lg shadow-black/30">
                             <span>Conheça nossos trabalhos</span>
@@ -162,10 +132,9 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="lg:col-span-5 flex justify-center lg:justify-end items-center mt-8 lg:mt-0">
-                    <img src="searched_images/logo.jpg" 
-                         alt="Institut Atlantique Sud" 
+                    <img src="searched_images/logo.jpg"
+                         alt="Institut Atlantique Sud"
                          class="w-[280px] md:w-[340px] lg:w-[380px] h-auto max-h-[420px] lg:max-h-[480px] object-contain opacity-90 drop-shadow-[0_15px_35px_rgba(0,0,0,0.55)]">
                 </div>
             </div>
@@ -182,18 +151,15 @@
                     <p class="text-white/70 text-lg">Um think tank independente a serviço de uma visão estratégica compartilhada entre a Europa e a América do Sul.</p>
                 </div>
             </div>
-            
             <div class="md:col-span-7 space-y-8">
                 <div>
                     <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-2">Missão</div>
                     <p class="text-xl leading-snug">Transformar vulnerabilidades híbridas em oportunidades de poder comum entre a França e o Brasil.</p>
                 </div>
-                
                 <div>
                     <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-2">Visão</div>
                     <p class="text-xl leading-snug">Posicionar a <span class="font-semibold">Guiana Azul</span> como hub marítimo estratégico da França e da Europa no Atlântico Sul, em parceria com a <span class="font-semibold">Amazônia Azul</span> brasileira.</p>
                 </div>
-                
                 <div>
                     <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-3">Nossos valores</div>
                     <div class="flex flex-wrap gap-3">
@@ -217,7 +183,6 @@
             <h2 class="heading-serif text-5xl leading-none tracking-tighter">Governança &amp; Parceiros</h2>
             <p class="mt-4 text-xl text-white/70">Uma iniciativa franco-brasileira em fase avançada de estruturação para promover uma visão soberana no Atlântico Sul.</p>
         </div>
-
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div class="dark-card rounded-3xl p-8 border border-white/10">
                 <div class="flex items-center gap-x-4 mb-6">
@@ -229,10 +194,8 @@
                         <div class="text-sm text-white/50">Think tank independente</div>
                     </div>
                 </div>
-                
                 <div class="space-y-4 text-[15px] text-white/80">
                     <p>O Institut Atlantique Sud é uma iniciativa independente dedicada à análise estratégica e à promoção de uma cooperação soberana entre França, Brasil e União Europeia.</p>
-                    
                     <div class="pt-4 border-t border-white/10">
                         <div class="text-sm text-[#C5A46E] font-medium mb-2">Fase 2026</div>
                         <div class="flex flex-wrap gap-2">
@@ -243,7 +206,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="dark-card rounded-3xl p-8 border border-white/10">
                 <div class="flex items-center gap-x-4 mb-6">
                     <div class="w-12 h-12 rounded-2xl bg-[#C5A46E]/10 flex items-center justify-center">
@@ -254,13 +216,11 @@
                         <div class="text-sm text-white/50">Rede em construção</div>
                     </div>
                 </div>
-                
                 <div class="space-y-5 text-[15px]">
                     <div>
                         <div class="font-medium text-white mb-1.5">Instituições e Think tanks</div>
                         <div class="text-white/70 text-sm">Parcerias em andamento com centros de pesquisa e instituições acadêmicas na França, Brasil e nível europeu, alinhados com os desafios de soberania marítima e segurança de suprimentos críticos.</div>
                     </div>
-                    
                     <div>
                         <div class="font-medium text-white mb-1.5">Cooperação operacional existente</div>
                         <div class="flex flex-wrap gap-2 text-sm">
@@ -280,22 +240,17 @@
             <div class="md:col-span-7">
                 <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">TERRITÓRIO EUROPEU NA AMÉRICA DO SUL</span>
                 <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-2 mb-8">A Guiana Azul</h2>
-                
                 <div class="prose prose-invert max-w-none text-[17px] text-white/85 space-y-6">
                     <p>Único território da União Europeia na América do Sul, a Guiana Francesa possui uma Zona Econômica Exclusiva (ZEE) de 350.000 km².</p>
-                    
                     <p>Além das ameaças híbridas atuais, a <strong>Guiana Azul</strong> oferece um potencial excepcional em:</p>
-                    
                     <ul class="list-none space-y-2 pl-1">
                         <li class="flex gap-x-3"><i class="fa-solid fa-gem mt-1.5 text-[#C5A46E]"></i> <span>Minerais críticos (ouro, bauxita, terras raras potenciais)</span></li>
                         <li class="flex gap-x-3"><i class="fa-solid fa-leaf mt-1.5 text-[#C5A46E]"></i> <span>Hidrogênio verde (projeto Hyguane e sinergias com o Suriname)</span></li>
                         <li class="flex gap-x-3"><i class="fa-solid fa-ship mt-1.5 text-[#C5A46E]"></i> <span>Posição de hub marítimo estratégico no Atlântico Sul</span></li>
                     </ul>
-                    
                     <p class="pt-2"><strong>O objetivo:</strong> passar de uma postura defensiva para uma estratégia proativa de soberania, valorizando este território único a serviço da Europa e da parceria franco-brasileira.</p>
                 </div>
             </div>
-            
             <div class="md:col-span-5 mt-10 md:mt-0">
                 <div class="bg-[#111827] rounded-3xl p-8 border border-white/10">
                     <div class="text-sm uppercase tracking-widest text-white/60 mb-4">Números chave</div>
@@ -316,7 +271,6 @@
                 </div>
             </div>
         </div>
-
         <div class="mt-12">
             <div class="rounded-3xl overflow-hidden border border-white/10 shadow-xl">
                 <img src="searched_images/J1wTL.jpg" alt="Mapa da Guiana Francesa e sua Zona Econômica Exclusiva" class="w-full h-auto object-cover">
@@ -334,11 +288,9 @@
             <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">O CORAÇÃO MARÍTIMO DO BRASIL</span>
             <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-2 mb-8">A Amazônia Azul</h2>
         </div>
-        
         <div class="grid md:grid-cols-2 gap-x-10 gap-y-8 text-[17px] text-white/85">
             <div>
                 <p class="mb-6">Território marítimo brasileiro de <strong>5,7 milhões de km²</strong> (67% do território continental), a Amazônia Azul concentra o essencial do poder econômico e energético do Brasil no século XXI:</p>
-                
                 <div class="space-y-4">
                     <div class="flex gap-4">
                         <div class="w-9 h-9 flex-shrink-0 rounded-2xl bg-[#C5A46E]/10 flex items-center justify-center text-[#C5A46E]"><i class="fa-solid fa-globe"></i></div>
@@ -354,7 +306,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="pt-2">
                 <div class="bg-[#111827] rounded-3xl p-8 border border-white/10 h-full">
                     <div class="uppercase text-xs tracking-widest text-white/60 mb-3">Recurso estratégico maior</div>
@@ -362,7 +313,6 @@
                 </div>
             </div>
         </div>
-
         <div class="mt-12">
             <img src="searched_images/yYmV5.jpg" alt="Plataforma offshore brasileira - Amazônia Azul" class="w-full rounded-3xl shadow-2xl border border-white/10 object-cover max-h-[420px]">
             <div class="mt-3 flex justify-between items-center text-xs text-white/60">
@@ -378,7 +328,6 @@
             <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">PARCERIA FRANCO-BRASILEIRA</span>
             <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-2">Uma cooperação estratégica inédita no Atlântico Sul</h2>
         </div>
-        
         <div class="grid md:grid-cols-5 gap-8">
             <div class="md:col-span-3 text-[17px] text-white/85 space-y-6">
                 <p>A França e o Brasil já compartilham uma cooperação operacional concreta:</p>
@@ -387,10 +336,8 @@
                     <li class="flex gap-x-3"><i class="fa-solid fa-check text-[#C5A46E] mt-1"></i> <span>Diálogos 2+2 França-Brasil</span></li>
                     <li class="flex gap-x-3"><i class="fa-solid fa-check text-[#C5A46E] mt-1"></i> <span>Acordos de cooperação científica e técnica</span></li>
                 </ul>
-                
                 <p class="pt-4 font-medium text-white">O Instituto propõe ir mais longe em direção a uma verdadeira <strong>estratégia de poder comum</strong>:</p>
             </div>
-            
             <div class="md:col-span-2">
                 <div class="bg-[#111827] rounded-3xl p-8 border border-white/10 space-y-5 text-sm">
                     <div class="flex gap-4"><i class="fa-solid fa-link text-[#C5A46E] w-5 mt-0.5"></i> <span>Rastreabilidade conjunta do ouro</span></div>
@@ -407,10 +354,8 @@
         <div class="max-w-3xl mb-10">
             <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">DEPENDÊNCIA EUROPEIA E OPORTUNIDADE HISTÓRICA</span>
             <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-2 mb-6">Minerais críticos e Exploração dos fundos marinhos</h2>
-            
             <p class="text-xl text-white/80">A Europa está em situação de dependência estratégica extrema da China:</p>
         </div>
-        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
             <div class="bg-[#111827] rounded-3xl p-7 border border-white/10 text-center">
                 <div class="text-6xl font-semibold text-[#C5A46E]">97%</div>
@@ -425,18 +370,15 @@
                 <div class="mt-2 text-sm tracking-wide">Terras raras</div>
             </div>
         </div>
-        
         <div class="max-w-3xl text-[17px] text-white/85 space-y-6">
             <p>A <strong>Guiana Azul</strong> (território da UE) e a <strong>Amazônia Azul</strong> constituem uma das raras oportunidades reais de diversificação soberana.</p>
-            
             <div class="pt-4 border-t border-white/10">
                 <p class="font-medium mb-4">Inspirado no modelo japonês de <strong>Sanae Takaichi</strong> (navio <em>Chikyu</em> a 6.000 metros), o Instituto propõe:</p>
-                
                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-4 text-base">
                     <div class="flex gap-x-3"><i class="fa-solid fa-check-double text-[#C5A46E] mt-1"></i> <span>Criação de um <strong>Fundo soberano franco-europeu</strong> (500M€ – 1 bilhão€)</span></div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check-double text-[#C5A46E] mt-1"></i> <span>Parcerias em exploração dos fundos marinhos (deep-sea mining)</span></div>
                     <div class="flex gap-x-3"><i class="fa-solid fa-check-double text-[#C5A46E] mt-1"></i> <span>Valorização responsável de nódulos polimetálicos e terras raras</span></div>
-                    <div class="flex gap-x-3"><i class="fa-solid fa-check-double text-[#C5A46E] mt-1"></i> <span> Governança binacional França-Brasil alinhada com padrões ambientais exigentes</span></div>
+                    <div class="flex gap-x-3"><i class="fa-solid fa-check-double text-[#C5A46E] mt-1"></i> <span>Governança binacional França-Brasil alinhada com padrões ambientais exigentes</span></div>
                 </div>
             </div>
         </div>
@@ -450,7 +392,6 @@
                 <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-1">Publicações</h2>
             </div>
         </div>
-        
         <div class="grid md:grid-cols-2 gap-6">
             <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
                 <div class="flex-1">
@@ -460,12 +401,11 @@
                 </div>
                 <div class="pt-6 mt-auto">
                     <a href="https://drive.google.com/file/d/1dEy5nZPIL0uBqKKVf8pvfG8G4haswaWJ/view?usp=sharing" target="_blank"
-                       class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 text-sm font-semibold px-5 h-11 rounded-2xl w-full sm:w-auto">
+                       class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 text-sm font-semibold px-6 h-11 rounded-2xl w-full">
                         <i class="fa-solid fa-download"></i> <span>Baixar em português</span>
                     </a>
                 </div>
             </div>
-
             <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
                 <div class="flex-1">
                     <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">ESTUDO ESTRATÉGICO</div>
@@ -474,7 +414,7 @@
                 </div>
                 <div class="pt-6 mt-auto">
                     <a href="https://docs.google.com/document/d/1GAo7hlB0tM0hY-Tr0PrH0PvNjGHLDeFXAQO5KrVgvBE/edit?usp=sharing" target="_blank"
-                       class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 text-sm font-semibold px-5 h-11 rounded-2xl w-full sm:w-auto">
+                       class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 text-sm font-semibold px-6 h-11 rounded-2xl w-full">
                         <i class="fa-solid fa-download"></i> <span>Baixar em português</span>
                     </a>
                 </div>
@@ -488,7 +428,6 @@
             <h2 class="heading-serif text-5xl leading-none tracking-tighter mb-4">Entre em contato</h2>
             <p class="text-xl text-white/80 max-w-md mx-auto">Para solicitações de parceria ou informações sobre nossos trabalhos.</p>
         </div>
-
         <div class="max-w-[620px] mx-auto">
             <form action="https://formspree.io/f/xqejvejv" method="POST" class="space-y-6">
                 <div>
@@ -551,7 +490,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="pt-8 border-t border-white/10 text-xs text-white/50 text-center">
                 © 2026 Institut Atlantique Sud — Todos os direitos reservados. Think tank independente.
             </div>
@@ -561,25 +499,25 @@
     <script>
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         function openMobileMenu() {
             mobileMenu.classList.remove('hidden');
             mobileMenu.classList.add('flex');
             document.body.style.overflow = 'hidden';
         }
-        
+
         function closeMobileMenu() {
             mobileMenu.classList.remove('flex');
             mobileMenu.classList.add('hidden');
             document.body.style.overflow = '';
         }
-        
+
         if (mobileBtn) mobileBtn.addEventListener('click', openMobileMenu);
-        
+
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu.classList.contains('flex')) closeMobileMenu();
         });
-        
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const target = document.querySelector(this.getAttribute('href'));
@@ -593,14 +531,8 @@
                 }
             });
         });
-        
+
         console.log('%c[Institut Atlantique Sud] Site PT carregado com sucesso.', 'color:#64748b');
     </script>
-    <style>
-/* Remove o logo dourado do cabeçalho do menu mobile */
-#mobile-menu .flex.items-center.gap-x-3 .w-9 {
-    display: none !important;
-}
-</style>
 </body>
 </html>
