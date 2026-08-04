@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="favicon.jpg" rel="icon" type="image/jpeg"/>
+  <link href="favicon.jpg" rel="apple-touch-icon"/>
+  <link href="favicon.jpg" rel="shortcut icon"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="The Institut Atlantique Sud is an independent think tank dedicated to maritime sovereignty, geoeconomics and France–Brazil cooperation in the South Atlantic."/>
+  <title>Institut Atlantique Sud — Independent Think Tank France–Brazil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.02em; }
+    .nav-active { color: #C5A46E; font-weight: 600; }
+    .dark-card { background-color: #111827; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s; }
+    .dark-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .map-bg {
+      background-image: linear-gradient(rgba(10, 22, 40, 0.88), rgba(10, 22, 40, 0.94)),
+        url('https://images.unsplash.com/photo-1617791160505-6f00504e3519?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover; background-position: center; background-attachment: fixed;
+    }
+    .publication-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .nav-link { transition: color 0.2s ease; }
+    .nav-link:hover { color: #C5A46E; }
+    .menu-blue { background: linear-gradient(145deg, #1E3A5F, #0F2744); }
+    .think-tank-badge { background: rgba(197, 164, 110, 0.1); color: #C5A46E; border: 1px solid rgba(197, 164, 110, 0.3); }
+    .lang-active { background-color: #C5A46E; color: #0A1628; font-weight: 600; }
+  </style>
+  <link rel="canonical" href="https://institutatlantiquesud.org/en.html"/>
+  <link rel="alternate" hreflang="fr" href="https://institutatlantiquesud.org/"/>
+  <link rel="alternate" hreflang="pt-BR" href="https://institutatlantiquesud.org/pt.html"/>
+  <link rel="alternate" hreflang="en" href="https://institutatlantiquesud.org/en.html"/>
+  <link rel="alternate" hreflang="es" href="https://institutatlantiquesud.org/es.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://institutatlantiquesud.org/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Institut Atlantique Sud"/>
+  <meta property="og:title" content="Institut Atlantique Sud — Independent Think Tank France–Brazil"/>
+  <meta property="og:description" content="The Institut Atlantique Sud is an independent think tank dedicated to maritime sovereignty, geoeconomics and France–Brazil cooperation in the South Atlantic."/>
+  <meta property="og:url" content="https://institutatlantiquesud.org/en.html"/>
+  <meta property="og:image" content="https://institutatlantiquesud.org/favicon.jpg"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="twitter:card" content="summary"/>
+</head>
+<body class="bg-[#0A1628] text-white antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#0A1628]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-x-3">
+          <img src="logo-mark.jpg" alt="Logo Institut Atlantique Sud" class="h-8 w-auto">
+          <div class="flex flex-col text-[10px] md:text-xs text-white/70 tracking-[1.5px] leading-tight">
+            <div class="whitespace-nowrap">São Paulo</div>
+            <div>Paris</div>
+            <div>Cayenne</div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+          <a class="nav-link text-white/90 hover:text-white" href="#accueil">Home</a>
+          <a class="nav-link text-white/90 hover:text-white" href="#linstitut">The Institute</a>
+          <a class="nav-link text-white/90 hover:text-white" href="#guyanableue">Blue Guyana</a>
+          <a class="nav-link text-white/90 hover:text-white" href="en-dialogues.html">Dialogues</a>
+          <a class="nav-link text-white/90 hover:text-white" href="#publications">Publications</a>
+          <a class="nav-link text-white/90 hover:text-white" href="#contact">Contact</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-x-1 text-xs font-medium border border-white/20 rounded-full px-1 py-1">
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="index.html">FR</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="pt.html">PT</a>
+          <a class="px-3 py-1 rounded-full lang-active" href="en.html">EN</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="es.html">ES</a>
+        </div>
+
+        <button aria-label="Open menu" class="md:hidden w-11 h-11 flex items-center justify-center text-white/80 hover:text-white transition-colors" id="mobile-menu-btn">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden fixed inset-0 z-[60] md:hidden" id="mobile-menu">
+    <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 menu-blue shadow-2xl p-6 text-white overflow-y-auto flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-semibold">Institut Atlantique Sud</span>
+        <button class="text-white/70 hover:text-white" onclick="closeMobileMenu()"><i class="fa-solid fa-times text-3xl"></i></button>
+      </div>
+      <div class="flex flex-col gap-y-1 text-[15px] flex-1">
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="#accueil" onclick="closeMobileMenu()"><i class="fa-solid fa-home w-5"></i><span>Home</span></a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="#linstitut" onclick="closeMobileMenu()"><i class="fa-solid fa-info-circle w-5"></i><span>The Institute</span></a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="#guyanableue" onclick="closeMobileMenu()"><i class="fa-solid fa-globe-americas w-5"></i><span>Blue Guyana</span></a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="en-dialogues.html" onclick="closeMobileMenu()"><i class="fa-solid fa-comments w-5"></i><span>Dialogues</span></a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="#publications" onclick="closeMobileMenu()"><i class="fa-solid fa-file-alt w-5"></i><span>Publications</span></a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl flex items-center gap-x-3" href="#contact" onclick="closeMobileMenu()"><i class="fa-solid fa-envelope w-5"></i><span>Contact</span></a>
+
+        <div class="mt-5 pt-4 border-t border-white/10 text-xs text-white/50">
+          <div class="px-4 mb-2 text-white/40 uppercase tracking-wider text-[11px]">Other sections</div>
+          <a href="#amazoniebleue" class="block py-1.5 px-4" onclick="closeMobileMenu()">Blue Amazon</a>
+          <a href="#cooperation" class="block py-1.5 px-4" onclick="closeMobileMenu()">Cooperation</a>
+          <a href="#minerais" class="block py-1.5 px-4" onclick="closeMobileMenu()">Critical Minerals &amp; Seabed</a>
+          <a href="#gouvernance" class="block py-1.5 px-4" onclick="closeMobileMenu()">Governance &amp; Partners</a>
+          <a href="#equipe" class="block py-1.5 px-4" onclick="closeMobileMenu()">Founding Team</a>
+          <a href="#evenements" class="block py-1.5 px-4" onclick="closeMobileMenu()">Strategic Events</a>
+        </div>
+
+        <div style="margin:20px 0 10px; padding-top:12px; border-top:1px solid #4a5a7a;">
+          <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:4px;">
+            <a href="index.html" style="color:#e0e3ea; padding:6px 12px; text-decoration:none; font-size:13px; font-weight:500; border-radius:6px;">FR</a>
+            <a href="pt.html" style="color:#e0e3ea; padding:6px 12px; text-decoration:none; font-size:13px; font-weight:500; border-radius:6px;">PT</a>
+            <a href="en.html" style="color:#0A1628; background-color:#C5A46E; padding:6px 12px; text-decoration:none; font-size:13px; font-weight:600; border-radius:6px;">EN</a>
+            <a href="es.html" style="color:#e0e3ea; padding:6px 12px; text-decoration:none; font-size:13px; font-weight:500; border-radius:6px;">ES</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-white/10 text-xs text-white/50">
+        Independent think tank<br/>France • Brazil • South Atlantic
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="map-bg min-h-[100dvh] flex items-center relative" id="accueil">
+    <div class="max-w-6xl mx-auto px-6 pt-12 pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 items-center">
+        <div class="lg:col-span-7 max-w-3xl">
+          <h1 class="text-6xl md:text-7xl leading-[1.05] tracking-tighter font-semibold heading-serif mb-6">
+            Institut<br/>Atlantique Sud
+          </h1>
+          <p class="text-2xl md:text-3xl text-white/90 leading-tight tracking-tight mb-8">
+            For sovereignty, geoeconomics and strategic cooperation in the South Atlantic.
+          </p>
+          <div class="max-w-xl space-y-5 text-lg text-white/80 mb-10">
+            <p>The <span class="font-semibold text-white">Blue Guyana</span> and Brazil’s <span class="font-semibold text-white">Blue Amazon</span> form a unique strategic window in the 21st century.</p>
+            <p>Europe depends on China for <span class="font-semibold text-[#C5A46E]">97 %</span> of its magnesium, <span class="font-semibold text-[#C5A46E]">71 %</span> of its gallium and <span class="font-semibold text-[#C5A46E]">90-98 %</span> of its rare earths.</p>
+            <p class="text-white">Together, Blue Guyana and Blue Amazon can become the lever of European and Brazilian sovereignty in critical minerals, offshore energy and maritime security.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a class="inline-flex items-center justify-center gap-x-3 bg-[#C5A46E] hover:bg-[#B8955E] active:bg-[#A67C4A] transition-all text-[#0A1628] font-semibold px-8 h-14 rounded-2xl text-base shadow-lg shadow-black/30" href="#publications">
+              <span>Discover our work</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a class="inline-flex items-center justify-center gap-x-3 border border-white/30 hover:bg-white/5 transition-all font-medium px-8 h-14 rounded-2xl text-base" href="#contact">
+              <span>Contact us</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center lg:justify-end items-center mt-8 lg:mt-0">
+          <img alt="Institut Atlantique Sud" class="w-[280px] md:w-[340px] lg:w-[380px] h-auto max-h-[420px] lg:max-h-[480px] object-contain opacity-90 drop-shadow-[0_15px_35px_rgba(0,0,0,0.55)]" src="searched_images/logo.jpg"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE INSTITUTE -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="linstitut">
+    <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-start">
+      <div class="md:col-span-5">
+        <div class="sticky top-24">
+          <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">OUR IDENTITY</span>
+          <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3 mb-6">The Institute</h2>
+          <p class="text-white/70 text-lg">An independent think tank serving a shared strategic vision between Europe and South America.</p>
+        </div>
+      </div>
+      <div class="md:col-span-7 space-y-8">
+        <div>
+          <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-2">Mission</div>
+          <p class="text-xl leading-snug">Transform hybrid vulnerabilities into opportunities for shared power between France and Brazil.</p>
+        </div>
+        <div>
+          <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-2">Vision</div>
+          <p class="text-xl leading-snug">Position <span class="font-semibold">Blue Guyana</span> as a strategic maritime hub for France and Europe in the South Atlantic, in partnership with Brazil’s <span class="font-semibold">Blue Amazon</span>.</p>
+        </div>
+        <div>
+          <div class="uppercase text-xs tracking-[1.5px] text-white/60 mb-3">Our values</div>
+          <div class="flex flex-wrap gap-3">
+            <div class="px-5 py-2 bg-white/5 rounded-2xl text-sm border border-white/10">Sovereignty</div>
+            <div class="px-5 py-2 bg-white/5 rounded-2xl text-sm border border-white/10">Geoeconomic pragmatism</div>
+            <div class="px-5 py-2 bg-white/5 rounded-2xl text-sm border border-white/10">Strategic cooperation</div>
+            <div class="px-5 py-2 bg-white/5 rounded-2xl text-sm border border-white/10">Intellectual independence</div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/10">
+          <div class="flex items-start gap-x-3">
+            <i class="fa-solid fa-book text-[#C5A46E] text-lg mt-1"></i>
+            <div>
+              <div class="uppercase text-xs tracking-[1.5px] text-[#C5A46E] font-semibold">FOUNDING TEXT</div>
+              <h3 class="text-xl font-semibold tracking-tight mt-1 mb-2">Blue Guyana, Blue Amazon</h3>
+              <p class="text-white/80 text-[15px] leading-relaxed mb-4">The Manifesto “Blue Guyana, Blue Amazon” sets out the strategic doctrine of the Institut Atlantique Sud for the shared space between France and Brazil in the South Atlantic.</p>
+              <a href="ias-manifesto-fondateur-2026-fr.pdf" download class="inline-flex items-center justify-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] transition-all text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl">
+                <i class="fa-solid fa-download"></i><span>Download the Founding Manifesto (PDF)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLUE GUYANA -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="guyanableue">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">EUROPEAN TERRITORY IN SOUTH AMERICA</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">Blue Guyana</h2>
+      <p class="mt-4 text-xl text-white/70">The only territory of the European Union in South America, French Guiana has an Exclusive Economic Zone (EEZ) of 350,000 km².</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 mb-10">
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Beyond current hybrid threats</h3>
+        <p class="text-white/80 text-[15px] leading-relaxed mb-4">Blue Guyana offers exceptional potential in:</p>
+        <ul class="space-y-2 text-white/80 text-[15px]">
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Critical minerals (gold, bauxite, potential rare earths)</li>
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Green hydrogen (Hyguane project)</li>
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Position as a strategic maritime hub in the South Atlantic</li>
+        </ul>
+        <p class="text-white/80 text-[15px] leading-relaxed mt-4">The objective: move from a defensive posture to a proactive sovereignty strategy.</p>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-6">Key figures</h3>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-[#C5A46E]">350,000</div>
+            <div class="text-sm text-white/70 mt-1">km² of Exclusive Economic Zone</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-[#C5A46E]">1</div>
+            <div class="text-sm text-white/70 mt-1">Only EU territory in South America</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLUE AMAZON -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="amazoniebleue">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">BRAZIL’S MARITIME HEART</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">Blue Amazon</h2>
+      <p class="mt-4 text-xl text-white/70">Brazil’s maritime territory of 5.7 million km², the Blue Amazon concentrates the bulk of Brazil’s economic and energy power in the 21st century.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Structural data</h3>
+        <ul class="space-y-3 text-white/80 text-[15px]">
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E] font-semibold">95 %</span> of Brazilian foreign trade</li>
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E] font-semibold">95 %</span> of offshore oil and gas production</li>
+          <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Virtually all submarine cables connecting Brazil to the world</li>
+        </ul>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Major strategic resource</h3>
+        <p class="text-white/80 text-[15px] leading-relaxed">Critical mineral resources in the depths of the South Atlantic, notably on the Rio Grande Rise — one of the most important polymetallic nodule provinces in the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COOPERATION -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="cooperation">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">FRANCE–BRAZIL PARTNERSHIP</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">An unprecedented strategic cooperation in the South Atlantic</h2>
+    </div>
+    <div class="dark-card rounded-3xl p-8 md:p-10 border border-white/10 mb-8">
+      <p class="text-white/85 text-[17px] leading-relaxed mb-6">
+        France and Brazil already share concrete operational cooperation:
+      </p>
+      <div class="flex flex-wrap gap-3 mb-6">
+        <span class="px-4 py-2 bg-white/5 rounded-xl text-sm border border-white/10">Operation Guiana Shield</span>
+        <span class="px-4 py-2 bg-white/5 rounded-xl text-sm border border-white/10">2+2 Dialogues</span>
+        <span class="px-4 py-2 bg-white/5 rounded-xl text-sm border border-white/10">Scientific cooperation agreements</span>
+      </div>
+      <p class="text-white/80 text-[15px] leading-relaxed mb-6">
+        The Institute proposes to go further, towards a true shared power strategy:
+      </p>
+      <ul class="space-y-2 text-white/80 text-[15px]">
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Joint gold traceability</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Joint deep-sea mining projects</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Binational information fusion centre</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Partnership in oceanographic research and offshore technologies</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CRITICAL MINERALS -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="minerais">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">EUROPEAN DEPENDENCY &amp; HISTORIC OPPORTUNITY</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">Critical minerals &amp; Deep-sea mining</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="dark-card rounded-3xl p-6 border border-white/10 text-center">
+        <div class="text-4xl font-bold text-[#C5A46E]">97 %</div>
+        <div class="text-sm text-white/70 mt-2">Magnesium</div>
+      </div>
+      <div class="dark-card rounded-3xl p-6 border border-white/10 text-center">
+        <div class="text-4xl font-bold text-[#C5A46E]">71 %</div>
+        <div class="text-sm text-white/70 mt-2">Gallium</div>
+      </div>
+      <div class="dark-card rounded-3xl p-6 border border-white/10 text-center">
+        <div class="text-4xl font-bold text-[#C5A46E]">90-98 %</div>
+        <div class="text-sm text-white/70 mt-2">Rare earths</div>
+      </div>
+    </div>
+    <div class="dark-card rounded-3xl p-8 border border-white/10">
+      <p class="text-white/80 text-[15px] leading-relaxed mb-4">
+        Blue Guyana and Blue Amazon constitute one of the rare real opportunities for sovereign diversification.
+      </p>
+      <p class="text-white/80 text-[15px] leading-relaxed mb-4">
+        Inspired by Sanae Takaichi’s Japanese model, the Institute proposes:
+      </p>
+      <ul class="space-y-2 text-white/80 text-[15px]">
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Creation of a Franco-European sovereign fund (€500 m – €1 bn)</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Partnerships in deep-sea mining</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Responsible valorisation of polymetallic nodules and rare earths</li>
+        <li class="flex items-start gap-2"><span class="text-[#C5A46E]">•</span> Binational France–Brazil governance</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="gouvernance">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">INDEPENDENT STRUCTURE</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">Governance &amp; Partners</h2>
+      <p class="mt-4 text-xl text-white/70">A Franco-Brazilian initiative in advanced structuring phase to carry a sovereign vision in the South Atlantic.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Governance</h3>
+        <p class="text-white/80 text-[15px] leading-relaxed mb-4">The Institut Atlantique Sud is an independent initiative dedicated to strategic analysis and the promotion of sovereign cooperation between France, Brazil and the European Union.</p>
+        <p class="text-white/70 text-sm">2026 Phase — Franco-Brazilian steering committee<br/>Subsidiaries Paris • São Paulo • Cayenne (planned)</p>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Strategic partners</h3>
+        <p class="text-white/80 text-[15px] leading-relaxed mb-4">Network under construction with research centres and academic institutions in France, Brazil and at European level, aligned on maritime sovereignty and the securing of critical supplies.</p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="px-3 py-1 bg-white/5 rounded-lg border border-white/10">Operation Guiana Shield</span>
+          <span class="px-3 py-1 bg-white/5 rounded-lg border border-white/10">2+2 Dialogues</span>
+          <span class="px-3 py-1 bg-white/5 rounded-lg border border-white/10">Oceanographic research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDING TEAM -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10" id="equipe">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">FOUNDING LEADERSHIP</span>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-3">Founding Team</h2>
+      <p class="mt-4 text-xl text-white/70">Three complementary profiles serving a shared strategic vision for the South Atlantic.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="dark-card rounded-3xl p-8 border border-white/10 text-center flex flex-col">
+        <div class="mx-auto mb-6">
+          <img alt="Antoine Bachelin Sena" class="w-40 h-40 rounded-2xl object-cover border border-white/10 shadow-xl mx-auto" src="antoinebachelinsena.jpg"/>
+        </div>
+        <div class="flex-1">
+          <div class="font-semibold text-2xl leading-tight">Antoine Bachelin Sena</div>
+          <div class="text-[#C5A46E] text-sm font-medium tracking-wider mt-1">Founding President &amp; Director of Strategy</div>
+          <p class="mt-4 text-sm text-white/80 leading-relaxed">Intellectual capital, publications, doctrinal vision “Blue Guyana / Blue Amazon”, institutional network in France, proprietary methodology.</p>
+          <div class="mt-3 flex justify-center">
+            <a href="https://x.com/antoinebachelin" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter text-base text-white/50 hover:text-[#C5A46E] transition-colors"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10 text-center flex flex-col">
+        <div class="mx-auto mb-6">
+          <img alt="Arthur Machado" class="w-40 h-40 rounded-2xl object-cover border border-white/10 shadow-xl mx-auto" src="arthurmachado.jpg"/>
+        </div>
+        <div class="flex-1">
+          <div class="font-semibold text-2xl leading-tight">Arthur Machado</div>
+          <div class="text-[#C5A46E] text-sm font-medium tracking-wider mt-1">Vice-President &amp; Director of International Relations and Partnerships</div>
+          <p class="mt-4 text-sm text-white/80 leading-relaxed">Franco-Brazilian business network, access to sponsors and international partners, development of the international entity, diplomatic networking.</p>
+          <div class="mt-3 flex justify-center">
+            <a href="https://x.com/Arthurmachadosp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter text-base text-white/50 hover:text-[#C5A46E] transition-colors"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10 text-center flex flex-col">
+        <div class="mx-auto mb-6">
+          <img alt="Renato Giraldi" class="w-40 h-40 rounded-2xl object-cover border border-white/10 shadow-xl mx-auto" src="renatogiraldi.jpg"/>
+        </div>
+        <div class="flex-1">
+          <div class="font-semibold text-2xl leading-tight">Renato Giraldi</div>
+          <div class="text-[#C5A46E] text-sm font-medium tracking-wider mt-1">Board Member &amp; Director of Brazil Affairs and Institutional Development</div>
+          <p class="mt-4 text-sm text-white/80 leading-relaxed">Anchoring in the Brazilian institutional ecosystem, business network in Brazil, operational coordination of the Brazilian entity, development of local partnerships.</p>
+          <div class="mt-3 flex justify-center">
+            <a href="https://x.com/giraldirenato" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter text-base text-white/50 hover:text-[#C5A46E] transition-colors"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGIC EVENTS -->
+  <section class="max-w-5xl mx-auto px-6 py-20 border-b border-white/10 bg-[#0F1F38]" id="evenements">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-2xl think-tank-badge text-sm mb-4">
+        <i class="fa-solid fa-handshake"></i>
+        <span class="font-medium tracking-wider">INFLUENCE PLATFORM</span>
+      </div>
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter">Strategic Events</h2>
+      <p class="mt-4 text-xl text-white/70">Privileged exchange formats for decision-makers and experts of the South Atlantic.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <div class="flex items-center gap-x-3 mb-4">
+          <i class="fa-solid fa-utensils text-[#C5A46E] text-2xl"></i>
+          <div class="font-semibold text-xl">Exclusive Dinners</div>
+        </div>
+        <p class="text-white/80 text-[15px]">Confidential meetings in small committees around sensitive strategic themes (maritime sovereignty, hybridity, critical minerals). By invitation only.</p>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <div class="flex items-center gap-x-3 mb-4">
+          <i class="fa-solid fa-user-secret text-[#C5A46E] text-2xl"></i>
+          <div class="font-semibold text-xl">Private Briefings</div>
+        </div>
+        <p class="text-white/80 text-[15px]">Analysis and foresight sessions in a restricted circle, intended for institutional partners and sponsors of the Institute.</p>
+      </div>
+      <div class="dark-card rounded-3xl p-8 border border-white/10">
+        <div class="flex items-center gap-x-3 mb-4">
+          <i class="fa-solid fa-microphone text-[#C5A46E] text-2xl"></i>
+          <div class="font-semibold text-xl">Conferences &amp; Dialogues</div>
+        </div>
+        <p class="text-white/80 text-[15px]">High-level events bringing together French, Brazilian and European experts around the major challenges of the South Atlantic space.</p>
+      </div>
+    </div>
+    <div class="max-w-3xl mx-auto mt-10 text-center">
+      <p class="text-white/60 text-sm">These formats, currently being structured, will be rolled out progressively from 2026.</p>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="max-w-6xl mx-auto px-6 py-20" id="publications">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-y-4 mb-10">
+      <div>
+        <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">ANALYSES &amp; RECOMMENDATIONS</span>
+        <h2 class="heading-serif text-5xl leading-none tracking-tighter mt-1">Publications</h2>
+        <div class="mt-6 mb-10">
+          <a class="inline-flex items-center gap-x-2 text-[#C5A46E] hover:text-white transition-colors text-sm font-semibold tracking-wide" href="publications-en.html">
+            All publications — summaries and PDFs
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
+        <div class="flex-1">
+          <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC RESEARCH NOTE</div>
+          <h3 class="font-semibold text-2xl leading-tight mb-4">Blue Guyana and Blue Amazon</h3>
+          <p class="text-white/75 text-[15px]">In-depth and structured analysis of the challenges of maritime sovereignty, critical minerals and strategic France-Brazil-EU cooperation in the South Atlantic. Long and documented version.</p>
+        </div>
+        <div class="pt-6 mt-auto">
+          <a class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 transition-all text-sm font-semibold px-6 h-11 rounded-2xl w-full" download href="ias-note-guyane-bleue-amazonie-bleue-2026-fr.pdf">
+            <i class="fa-solid fa-download"></i><span>Download PDF</span>
+          </a>
+        </div>
+      </div>
+      <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
+        <div class="flex-1">
+          <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC PROPOSAL — SOVEREIGN FUND</div>
+          <h3 class="font-semibold text-2xl leading-tight mb-4">Franco-European Fund for Critical Minerals of Blue Guyana (FFEMC)</h3>
+          <p class="text-white/75 text-[15px]">Complete proposal for a Franco-European sovereign fund dedicated to the valorisation of the strategic resources of Blue Guyana. An instrument to end Chinese predation on gold resources, secure European supplies of critical minerals and build a lever of economic power in South America — aligned with the Critical Raw Materials Act (CRMA) and inspired by Guyana’s Natural Resource Fund.</p>
+        </div>
+        <div class="pt-6 mt-auto">
+          <a class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 transition-all text-sm font-semibold px-6 h-11 rounded-2xl w-full" download href="ias-proposition-ffemc-2026-fr.pdf">
+            <i class="fa-solid fa-download"></i><span>Download in French</span>
+          </a>
+        </div>
+      </div>
+      <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
+        <div class="flex-1">
+          <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC STUDY</div>
+          <h3 class="font-semibold text-2xl leading-tight mb-4">Sanae Takaichi’s strategy in deep-sea mining</h3>
+          <p class="text-white/75 text-[15px]">Analysis of the Japanese deep-sea mining strategy led by Sanae Takaichi and concrete lessons for Brazilian sovereignty over the Blue Amazon.</p>
+        </div>
+        <div class="pt-6 mt-auto">
+          <a class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 transition-all text-sm font-semibold px-6 h-11 rounded-2xl w-full" download href="ias-etude-takaichi-deep-sea-mining-2026-fr.pdf">
+            <i class="fa-solid fa-download"></i><span>Download in French</span>
+          </a>
+        </div>
+      </div>
+      <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
+        <div class="flex-1">
+          <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC POSITION NOTE</div>
+          <h3 class="font-semibold text-2xl leading-tight mb-4">The French strategic context on critical minerals and Guyana: a window of opportunity to secure</h3>
+          <p class="text-white/75 text-[15px]">This note examines the unprecedented convergence, between 2022 and 2026, of the Varin report, the creation of DIAMMS, the reform of the mining code and Senate report no. 135 on the Guiana Shield. It analyses the structural bottlenecks that weaken this window of opportunity and proposes recommendations to secure it.</p>
+        </div>
+        <div class="pt-6 mt-auto">
+          <a class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 transition-all text-sm font-semibold px-6 h-11 rounded-2xl w-full" download href="ias-note-position-minerais-critiques-france-2026-fr.pdf">
+            <i class="fa-solid fa-download"></i><span>Download in French</span>
+          </a>
+        </div>
+      </div>
+      <div class="publication-card dark-card border border-white/10 rounded-3xl p-8 flex flex-col">
+        <div class="flex-1">
+          <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC NOTE</div>
+          <h3 class="font-semibold text-2xl leading-tight mb-4">Blue Amazon: the energy heart of Brazil in the 21st century</h3>
+          <p class="text-white/75 text-[15px]">Analysis focused on the maritime reinvention of Brazilian power, the Equatorial Margin and the resources of the seabed.</p>
+        </div>
+        <div class="pt-6 mt-auto">
+          <a class="inline-flex items-center justify-center gap-x-2 bg-white text-[#0A1628] hover:bg-white/90 transition-all text-sm font-semibold px-6 h-11 rounded-2xl w-full" download href="ias-note-amazonie-bleue-energie-2026-fr.pdf">
+            <i class="fa-solid fa-download"></i><span>Download in French</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-xs text-white/50">
+      All publications are available free of charge. The Institute encourages their dissemination in French, Brazilian and European decision-making circles.
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="max-w-3xl mx-auto px-6 py-20" id="contact">
+    <div class="text-center mb-12">
+      <h2 class="heading-serif text-5xl leading-none tracking-tighter mb-4">Contact us</h2>
+      <p class="text-xl text-white/80 max-w-md mx-auto">For any request for partnership, intervention or information on our work.</p>
+    </div>
+    <div class="max-w-[620px] mx-auto">
+      <form action="https://formspree.io/f/xqejvejv" class="space-y-6" method="POST">
+        <div>
+          <label class="block text-sm font-medium text-white/70 mb-2">Full name</label>
+          <input class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none" name="name" required type="text"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white/70 mb-2">Email address</label>
+          <input class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none" name="email" required type="email"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white/70 mb-2">Subject</label>
+          <input class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-2xl px-5 py-3.5 text-white placeholder-white/40 outline-none" name="subject" required type="text"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-white/70 mb-2">Your message</label>
+          <textarea class="w-full bg-white/5 border border-white/10 focus:border-[#C5A46E] transition-colors rounded-3xl px-5 py-4 text-white placeholder-white/40 outline-none resize-y" name="message" required rows="6"></textarea>
+        </div>
+        <button class="w-full bg-[#C5A46E] hover:bg-[#B8955E] active:bg-[#A67C4A] transition-all text-[#0A1628] font-semibold text-lg py-4 rounded-2xl shadow-lg shadow-black/30" type="submit">
+          Send message
+        </button>
+      </form>
+      <p class="text-center text-xs text-white/50 mt-8">We will reply as soon as possible.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 pt-12 pb-8 text-sm text-white/60 bg-[#0A1628]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 mb-12">
+        <div>
+          <div class="font-semibold text-white mb-4 tracking-wider text-xs">NAVIGATION</div>
+          <div class="space-y-2 text-sm">
+            <a class="block hover:text-white transition-colors" href="#accueil">Home</a>
+            <a class="block hover:text-white transition-colors" href="#linstitut">The Institute</a>
+            <a class="block hover:text-white transition-colors" href="en-dialogues.html">Dialogues</a>
+            <a class="block hover:text-white transition-colors" href="publications-en.html">Publications</a>
+            <a class="block hover:text-white transition-colors" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-white mb-4 tracking-wider text-xs">STRATEGIC SECTIONS</div>
+          <div class="space-y-2 text-sm">
+            <a class="block hover:text-white transition-colors" href="#guyanableue">Blue Guyana</a>
+            <a class="block hover:text-white transition-colors" href="#amazoniebleue">Blue Amazon</a>
+            <a class="block hover:text-white transition-colors" href="#cooperation">France–Brazil Cooperation</a>
+            <a class="block hover:text-white transition-colors" href="#minerais">Critical Minerals &amp; Seabed</a>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-white mb-4 tracking-wider text-xs">CONTACT</div>
+          <div class="space-y-2 text-sm">
+            <a class="block hover:text-white transition-colors" href="#contact">Contact form</a>
+            <div class="pt-2 text-xs">São Paulo • Paris • Cayenne</div>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-white mb-4 tracking-wider text-xs">INSTITUT ATLANTIQUE SUD</div>
+          <div class="text-sm leading-relaxed">Independent think tank dedicated to maritime sovereignty, geoeconomics and strategic cooperation in the South Atlantic.</div>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-y-3 text-xs text-white/50">
+        <div>© 2026 Institut Atlantique Sud — All rights reserved. Independent think tank.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function openMobileMenu() { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.remove('flex'); mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }
+    if (mobileBtn) mobileBtn.addEventListener('click', openMobileMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) closeMobileMenu(); });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navHeight = 80;
+          const offsetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          if (!mobileMenu.classList.contains('hidden')) closeMobileMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
