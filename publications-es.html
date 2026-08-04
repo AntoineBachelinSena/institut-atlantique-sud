@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="favicon.jpg" rel="icon" type="image/jpeg"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Publications de l'Institut Atlantique Sud — notes stratégiques, propositions et analyses sur la souveraineté maritime, les minerais critiques et la coopération France–Brésil."/>
+  <title>Publicaciones — Institut Atlantique Sud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.02em; }
+    .dark-card { background-color: #111827; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s; }
+    .dark-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .nav-link { transition: color 0.2s ease; }
+    .nav-link:hover { color: #C5A46E; }
+    .menu-blue { background: linear-gradient(145deg, #1E3A5F, #0F2744); }
+    .lang-active { background-color: #C5A46E; color: #0A1628; font-weight: 600; }
+  </style>
+  <link rel="canonical" href="https://institutatlantiquesud.org/publications-es.html"/>
+  <meta property="og:title" content="Publicaciones — Institut Atlantique Sud"/>
+  <meta property="og:description" content="Notes stratégiques, propositions et analyses sur la souveraineté maritime et les minerais critiques."/>
+  <meta property="og:url" content="https://institutatlantiquesud.org/publications-es.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://institutatlantiquesud.org/favicon.jpg"/>
+  <meta property="og:locale" content="es_ES"/>
+</head>
+<body class="bg-[#0A1628] text-white antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#0A1628]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-x-3">
+          <img src="logo-mark.jpg" alt="Logo Institut Atlantique Sud" class="h-8 w-auto">
+          <div class="flex flex-col text-[10px] md:text-xs text-white/70 tracking-[1.5px] leading-tight">
+            <div class="whitespace-nowrap">São Paulo</div>
+            <div>Paris</div>
+            <div>Cayenne</div>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+          <a class="nav-link text-white/90 hover:text-white" href="index.html#accueil">Inicio</a>
+          <a class="nav-link text-white/90 hover:text-white" href="index.html#linstitut">El Instituto</a>
+          <a class="nav-link text-white/90 hover:text-white" href="index.html#guyanableue">Guayana Azul</a>
+          <a class="nav-link text-white/90 hover:text-white" href="dialogues.html">Diálogos</a>
+          <a class="nav-link text-white/90 hover:text-white text-[#C5A46E] font-semibold" href="publications-es.html">Publicaciones</a>
+          <a class="nav-link text-white/90 hover:text-white" href="index.html#contact">Contacto</a>
+        </div>
+        <div class="hidden md:flex items-center gap-x-1 text-xs font-medium border border-white/20 rounded-full px-1 py-1">
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications.html">FR</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications-pt.html">PT</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications-en.html">EN</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" class="lang-active" href="publications-es.html">ES</a>
+        </div>
+        <button aria-label="Ouvrir le menu" class="md:hidden w-11 h-11 flex items-center justify-center text-white/80 hover:text-white transition-colors" id="mobile-menu-btn">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden fixed inset-0 z-[60] md:hidden" id="mobile-menu">
+    <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 menu-blue shadow-2xl p-6 text-white overflow-y-auto flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-semibold">Institut Atlantique Sud</span>
+        <button class="text-white/70 hover:text-white" onclick="closeMobileMenu()"><i class="fa-solid fa-times text-3xl"></i></button>
+      </div>
+      <div class="flex flex-col gap-y-1 text-[15px] flex-1">
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="index.html#accueil" onclick="closeMobileMenu()">Inicio</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="index.html#linstitut" onclick="closeMobileMenu()">El Instituto</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="index.html#guyanableue" onclick="closeMobileMenu()">Guayana Azul</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="dialogues.html" onclick="closeMobileMenu()">Diálogos</a>
+        <a class="py-3 px-4 bg-white/5 rounded-xl" href="publications-es.html" onclick="closeMobileMenu()">Publicaciones</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="index.html#contact" onclick="closeMobileMenu()">Contacto</a>
+        <div class="mt-5 pt-4 border-t border-white/10 text-xs text-white/50">
+          <div class="px-4 mb-2 text-white/40 uppercase tracking-wider text-[11px]">Otras secciones</div>
+          <a href="index.html#amazoniebleue" class="block py-1.5 px-4" onclick="closeMobileMenu()">Amazonía Azul</a>
+          <a href="index.html#cooperation" class="block py-1.5 px-4" onclick="closeMobileMenu()">Cooperación</a>
+          <a href="index.html#minerais" class="block py-1.5 px-4" onclick="closeMobileMenu()">Minerales &amp; Fondos Marinos</a>
+          <a href="index.html#gouvernance" class="block py-1.5 px-4" onclick="closeMobileMenu()">Gobernanza &amp; Socios</a>
+          <a href="index.html#equipe" class="block py-1.5 px-4" onclick="closeMobileMenu()">Equipo Fundador</a>
+          <a href="index.html#evenements" class="block py-1.5 px-4" onclick="closeMobileMenu()">Eventos Estratégicos</a>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-center gap-3 text-sm">
+          <a href="publications-es.html" class="text-[#C5A46E] font-semibold">FR</a> | <a href="publications-pt.html">PT</a> | <a href="publications-en.html">EN</a> | <a class="lang-active" href="publications-es.html">ES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section class="pt-28 pb-12 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">ANÁLISIS &amp; RECOMENDACIONES</span>
+      <h1 class="heading-serif text-5xl md:text-6xl leading-none tracking-tighter mt-3 mb-6">Publicaciones</h1>
+      <p class="text-xl text-white/70 max-w-2xl mx-auto">Notas estratégicas, propuestas de política pública y análisis de fondo producidos por el Institut Atlantique Sud.</p>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="space-y-8">
+
+      <!-- 1. Manifeste -->
+      <article class="dark-card border border-[#C5A46E]/30 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">TEXTO FUNDADOR</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Guayana Azul, Amazonía Azul</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Manifiesto para una doctrina franco-brasileña del Atlántico Sur. Este texto fundador establece la visión estratégica del Institut Atlantique Sud: posicionar la Guayana Azul y la Amazonía Azul como palancas de una soberanía compartida entre Francia y Brasil frente a las dependencias críticas y las competiciones geoeconómicas del siglo XXI.
+        </p>
+        <a href="ias-manifesto-fondateur-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el Manifiesto (PDF)
+        </a>
+      </article>
+
+      <!-- 2. Note Guyane / Amazonie -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">NOTA DE INVESTIGACIÓN ESTRATÉGICA</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Guayana Azul y Amazonía Azul</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Análisis en profundidad y estructurado de los desafíos de soberanía marítima, minerales críticos y cooperación estratégica Francia–Brasil–UE en el Atlántico Sur. La nota examina la Zona Económica Exclusiva de la Guayana (350 000 km²), el potencial de la Amazonía Azul (5,7 millones de km²), las dependencias europeas críticas (magnesio 97 %, galio 71 %, tierras raras 90-98 %) y las condiciones de una cooperación atlántica reforzada.
+        </p>
+        <a href="ias-note-guyane-bleue-amazonie-bleue-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el PDF
+        </a>
+      </article>
+
+      <!-- 3. FFEMC -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">PROPUESTA ESTRATÉGICA — FONDO SOBERANO</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Fondo Franco-Europeo para los Minerales Críticos de la Guayana Azul (FFEMC)</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Propuesta completa de un fondo soberano franco-europeo dedicado a la valorización de los recursos estratégicos de la Guayana Azul. El instrumento apunta a poner fin a la depredación china sobre los recursos auríferos (25 000 t de oro estimado), asegurar los suministros europeos de minerales críticos y construir una palanca de poder económico en América del Sur. Alineado con el Critical Raw Materials Act (CRMA) e inspirado en el Natural Resource Fund de Guyana.
+        </p>
+        <a href="ias-proposition-ffemc-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el PDF
+        </a>
+      </article>
+
+      <!-- 4. Takaichi -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">ESTUDIO ESTRATÉGICO</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">La estrategia de Sanae Takaichi en la explotación de fondos marinos</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Analyse de la stratégie japonaise de deep-sea mining conduite par la Première ministre Sanae Takaichi, formalisée par le Mémorandum de coopération Japon–États-Unis de mars 2026. L’étude tire des leçons concrètes pour la souveraineté brésilienne sur l’Amazonía Azul (5,7 millions de km²) et l’extension du plateau continental approuvée par la CLPC en 2025 (+360 000 km² sur la Marge Équatoriale).
+        </p>
+        <a href="ias-etude-takaichi-deep-sea-mining-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el PDF
+        </a>
+      </article>
+
+      <!-- 5. Note position minerais -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">NOTA DE POSICIÓN ESTRATÉGICA</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">El contexto estratégico francés sobre minerales críticos y la Guayana</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Esta nota examina la convergencia inédita, entre 2022 y 2026, del informe Varin, de la creación de la DIAMMS, de la reforma del código minero y del informe senatorial n.º 135 sobre el Escudo de las Guayanas. Analiza los bloqueos estructurales que fragilizan esta ventana de oportunidad y propone recomendaciones concretas para asegurarla en beneficio de la soberanía francesa y europea.
+        </p>
+        <a href="ias-note-position-minerais-critiques-france-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el PDF
+        </a>
+      </article>
+
+      <!-- 6. Amazonía Azul énergie -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">NOTA ESTRATÉGICA</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">L’Amazonía Azul : le cœur énergétique du Brésil au XXIe siècle</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Análisis centrado en la reinvención marítima del poder brasileño. La Amazonía Azul (5,7 millones de km²) concentra el 95 % del comercio exterior y el 95 % de la producción de petróleo y gas offshore de Brasil. La nota examina el Margen Ecuatorial, los recursos de los fondos marinos (especialmente la Elevación del Río Grande) y las condiciones de una soberanía energética plenamente asumida.
+        </p>
+        <a href="ias-note-amazonie-bleue-energie-2026-es.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Descargar el PDF
+        </a>
+      </article>
+
+    </div>
+    <p class="text-center text-xs text-white/50 mt-12">
+      Todas las publicaciones están disponibles de forma gratuita. El Instituto fomenta su difusión en los círculos de decisión franceses, brasileños y europeos.
+    </p>
+  </section>
+
+  <footer class="border-t border-white/10 pt-10 pb-8 text-center text-xs text-white/50">
+    © 2026 Institut Atlantique Sud — Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function openMobileMenu() { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.remove('flex'); mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }
+    if (mobileBtn) mobileBtn.addEventListener('click', openMobileMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) closeMobileMenu(); });
+  </script>
+</body>
+</html>
