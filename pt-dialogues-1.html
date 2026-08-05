@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link href="favicon.jpg" rel="icon" type="image/jpeg"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Diálogos Estratégicos Atlântico Sul — série de conversas de alto nível organizada pelo Institut Atlantique Sud."/>
+  <title>Diálogos Estratégicos Atlântico Sul — Institut Atlantique Sud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.02em; }
+    .dark-card { background-color: #111827; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s; }
+    .dark-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .nav-link { transition: color 0.2s ease; }
+    .nav-link:hover { color: #C5A46E; }
+    .menu-blue { background: linear-gradient(145deg, #1E3A5F, #0F2744); }
+    .lang-active { background-color: #C5A46E; color: #0A1628; font-weight: 600; }
+  </style>
+  <meta property="og:title" content="Diálogos Estratégicos Atlântico Sul — Institut Atlantique Sud"/>
+  <meta property="og:description" content="Série de conversas de alto nível organizada pelo Institut Atlantique Sud."/>
+  <meta property="og:url" content="https://institutatlantiquesud.org/pt-dialogues.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://institutatlantiquesud.org/og-dialogues.jpg"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Diálogos Estratégicos Atlântico Sul"/>
+  <meta name="twitter:description" content="Série de conversas de alto nível organizada pelo Institut Atlantique Sud."/>
+  <meta name="twitter:image" content="https://institutatlantiquesud.org/og-dialogues.jpg"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CreativeWorkSeries","name":"Diálogos Estratégicos Atlântico Sul","description":"Série de conversas de alto nível organizada pelo Institut Atlantique Sud.","url":"https://institutatlantiquesud.org/pt-dialogues.html","inLanguage":["fr","pt-BR","en","es"],"publisher":{"@type":"Organization","name":"Institut Atlantique Sud","url":"https://institutatlantiquesud.org"}}
+  </script>
+  <link rel="canonical" href="https://institutatlantiquesud.org/pt-dialogues.html"/>
+  <link rel="alternate" hreflang="fr" href="https://institutatlantiquesud.org/dialogues.html"/>
+  <link rel="alternate" hreflang="pt-BR" href="https://institutatlantiquesud.org/pt-dialogues.html"/>
+  <link rel="alternate" hreflang="en" href="https://institutatlantiquesud.org/en-dialogues.html"/>
+  <link rel="alternate" hreflang="es" href="https://institutatlantiquesud.org/es-dialogues.html"/>
+</head>
+<body class="bg-[#0A1628] text-white antialiased">
+  <nav class="bg-[#0A1628]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-x-3">
+          <img src="logo-mark.jpg" alt="Logo" class="h-8 w-auto">
+          <div class="flex flex-col text-[10px] md:text-xs text-white/70 tracking-[1.5px] leading-tight">
+            <div>São Paulo</div><div>Paris</div><div>Cayenne</div>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+          <a class="nav-link text-white/90 hover:text-white" href="pt.html">Início</a>
+          <a class="nav-link text-white/90 hover:text-white" href="pt.html#linstitut">O Instituto</a>
+          <a class="nav-link text-white/90 hover:text-white" href="pt.html#guyanableue">Guiana Azul</a>
+          <a class="nav-link text-[#C5A46E] font-semibold" href="pt-dialogues.html">Diálogos</a>
+          <a class="nav-link text-white/90 hover:text-white" href="publications-pt.html">Publicações</a>
+          <a class="nav-link text-white/90 hover:text-white" href="pt.html#contact">Contato</a>
+        </div>
+        <div class="hidden md:flex items-center gap-x-1 text-xs font-medium border border-white/20 rounded-full px-1 py-1">
+          <a class="px-3 py-1 rounded-full hover:bg-white/10" href="dialogues.html">FR</a>
+          <a class="px-3 py-1 rounded-full lang-active" href="pt-dialogues.html">PT</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10" href="en-dialogues.html">EN</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10" href="es-dialogues.html">ES</a>
+        </div>
+        <button class="md:hidden w-11 h-11 flex items-center justify-center text-white/80" id="mobile-menu-btn"><i class="fa-solid fa-bars text-2xl"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div class="hidden fixed inset-0 z-[60] md:hidden" id="mobile-menu">
+    <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 menu-blue p-6 text-white overflow-y-auto flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-semibold">Institut Atlantique Sud</span>
+        <button onclick="closeMobileMenu()"><i class="fa-solid fa-times text-3xl"></i></button>
+      </div>
+      <a class="block py-3 px-4 hover:bg-white/5 rounded-xl" href="pt.html" onclick="closeMobileMenu()">Início</a>
+      <a class="block py-3 px-4 hover:bg-white/5 rounded-xl" href="pt.html#linstitut" onclick="closeMobileMenu()">O Instituto</a>
+      <a class="block py-3 px-4 hover:bg-white/5 rounded-xl" href="pt.html#guyanableue" onclick="closeMobileMenu()">Guiana Azul</a>
+      <a class="block py-3 px-4 bg-white/5 rounded-xl" href="pt-dialogues.html" onclick="closeMobileMenu()">Diálogos</a>
+      <a class="block py-3 px-4 hover:bg-white/5 rounded-xl" href="publications-pt.html" onclick="closeMobileMenu()">Publicações</a>
+      <a class="block py-3 px-4 hover:bg-white/5 rounded-xl" href="pt.html#contact" onclick="closeMobileMenu()">Contato</a>
+      <div class="mt-5 pt-4 border-t border-white/10 text-xs text-white/50">
+        <div class="px-4 mb-2 text-white/40 uppercase tracking-wider text-[11px]">Outras seções</div>
+        <a href="pt.html#amazoniebleue" class="block py-1.5 px-4" onclick="closeMobileMenu()">Amazônia Azul</a>
+        <a href="pt.html#cooperation" class="block py-1.5 px-4" onclick="closeMobileMenu()">Cooperação</a>
+        <a href="pt.html#minerais" class="block py-1.5 px-4" onclick="closeMobileMenu()">Minerais &amp; Fundos Marinhos</a>
+        <a href="pt.html#gouvernance" class="block py-1.5 px-4" onclick="closeMobileMenu()">Governança &amp; Parceiros</a>
+        <a href="pt.html#equipe" class="block py-1.5 px-4" onclick="closeMobileMenu()">Equipe Fundadora</a>
+        <a href="pt.html#eventos" class="block py-1.5 px-4" onclick="closeMobileMenu()">Eventos Estratégicos</a>
+      </div>
+      <div class="mt-6 pt-4 border-t border-white/10 flex justify-center gap-3 text-sm">
+        <a href="dialogues.html">FR</a> | <a href="pt-dialogues.html" class="text-[#C5A46E] font-semibold">PT</a> | <a href="en-dialogues.html">EN</a> | <a href="es-dialogues.html">ES</a>
+      </div>
+    </div>
+  </div>
+  <section class="pt-28 pb-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">SÉRIE</span>
+      <h1 class="heading-serif text-5xl md:text-6xl leading-none tracking-tighter mt-3 mb-6">Diálogos Estratégicos<br/>Atlântico Sul</h1>
+      <p class="text-xl text-white/75 max-w-2xl mx-auto leading-relaxed">
+        Uma série de conversas estratégicas organizada pelo Institut Atlantique Sud. Cada episódio formula uma pergunta estruturante e põe em diálogo interlocutores capazes de respondê-la com rigor.
+      </p>
+    </div>
+  </section>
+  <section class="max-w-4xl mx-auto px-6 pb-16">
+    <div class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+      <h2 class="text-2xl font-semibold mb-4">Formato</h2>
+      <ul class="space-y-3 text-white/80 text-[15px]">
+        <li class="flex items-start gap-3"><span class="text-[#C5A46E] mt-1">•</span><span>Uma pergunta estruturante, desdobrada em vários ângulos</span></li>
+        <li class="flex items-start gap-3"><span class="text-[#C5A46E] mt-1">•</span><span>Uma troca aprofundada de 30 a 45 minutos, filmada</span></li>
+        <li class="flex items-start gap-3"><span class="text-[#C5A46E] mt-1">•</span><span>Publicação integral, acompanhada de uma síntese escrita</span></li>
+      </ul>
+    </div>
+  </section>
+  <section class="max-w-4xl mx-auto px-6 pb-24">
+    <h2 class="heading-serif text-3xl mb-8">Primeiro diálogo</h2>
+    <article class="dark-card border border-[#C5A46E]/40 rounded-3xl p-8 md:p-10">
+      <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-2">Diálogo 1</div>
+      <h3 class="text-2xl font-semibold mb-4">Autonomia relacional e minerais críticos</h3>
+      <p class="text-white/80 text-[15px] leading-relaxed mb-5">
+        <strong>Pergunta central:</strong> O que resta da autonomia relacional argentino-brasileira quando a própria base relacional se desacopla — e a captura extrarregional do lítio e do nióbio acelera essa deriva, ou pode constituir um novo piso?
+      </p>
+      <p class="text-white/80 text-[15px] leading-relaxed mb-5">
+        O lítio argentino e o nióbio brasileiro formam uma complementaridade estrutural hoje capturada principalmente por atores extrarregionais. A história bilateral oferece um precedente, a ABACC, nascida de um interesse vital compartilhado e simétrico. Os minerais críticos e a governança dos fundos marinhos não oferecem essa base: são arenas de acesso competitivo a rendas.
+      </p>
+      <p class="text-white/80 text-[15px] leading-relaxed mb-6">
+        Este diálogo examina se o desacoplamento bilateral em curso desde o início da década de 2010 ainda deixa espaço para a cooperação no Atlântico Sul, ou se a janela se fechou.
+      </p>
+      <p class="text-white/60 text-sm mb-6 italic">
+        <span class="not-italic text-white/50">Fonte de partida:</span> Antoine Bachelin Sena, <a href="https://cari.org.ar/views/releases/detail/index.php?article_id=906" target="_blank" rel="noopener noreferrer" class="text-[#C5A46E] hover:underline">Hacia una autonomía estratégica regional</a>, CARI, Comentarios Estratégicos n.º 68, agosto de 2026
+      </p>
+      <div class="text-sm text-white/50">Interlocutor a confirmar · Publicação em breve</div>
+    </article>
+    <p class="text-center text-white/50 text-sm mt-12">
+      Outros diálogos serão anunciados progressivamente.
+    </p>
+  </section>
+  <footer class="border-t border-white/10 pt-10 pb-8 text-center text-xs text-white/50">
+    © 2026 Institut Atlantique Sud — Todos os direitos reservados.
+  </footer>
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function openMobileMenu() { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.remove('flex'); mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; }
+    if (mobileBtn) mobileBtn.addEventListener('click', openMobileMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileMenu(); });
+  </script>
+</body>
+</html>
