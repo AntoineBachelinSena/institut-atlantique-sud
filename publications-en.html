@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="favicon.jpg" rel="icon" type="image/jpeg"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Publications of the Institut Atlantique Sud: progress notes on Brazil's Law 15.506, working papers, research notes on Suriname's gold, data and pre-registrations, each with a DOI on Zenodo."/>
+  <title>Publications — Institut Atlantique Sud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .heading-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: -0.02em; }
+    .dark-card { background-color: #111827; transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s; }
+    .dark-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+    .nav-link { transition: color 0.2s ease; }
+    .nav-link:hover { color: #C5A46E; }
+    .menu-blue { background: linear-gradient(145deg, #1E3A5F, #0F2744); }
+    .lang-active { background-color: #C5A46E; color: #0A1628; font-weight: 600; }
+  </style>
+  <link rel="canonical" href="https://institutatlantiquesud.org/publications-en.html"/>
+  <link rel="alternate" hreflang="fr" href="https://institutatlantiquesud.org/publications.html"/>
+  <link rel="alternate" hreflang="pt-BR" href="https://institutatlantiquesud.org/publications-pt.html"/>
+  <link rel="alternate" hreflang="en" href="https://institutatlantiquesud.org/publications-en.html"/>
+  <link rel="alternate" hreflang="es" href="https://institutatlantiquesud.org/publications-es.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://institutatlantiquesud.org/publications.html"/>
+  <meta property="og:title" content="Publications — Institut Atlantique Sud"/>
+  <meta property="og:description" content="Progress notes on Brazil's Law 15.506, research notes on Suriname's gold, data and pre-registrations, deposited on Zenodo with a DOI, followed by the Institute's positions."/>
+  <meta property="og:url" content="https://institutatlantiquesud.org/publications-en.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://institutatlantiquesud.org/favicon.jpg"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta property="og:locale" content="en_US"/>
+</head>
+<body class="bg-[#0A1628] text-white antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#0A1628]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-x-3">
+          <img src="logo-mark.jpg" alt="Logo Institut Atlantique Sud" class="h-8 w-auto">
+          <div class="flex flex-col text-[10px] md:text-xs text-white/70 tracking-[1.5px] leading-tight">
+            <div class="whitespace-nowrap">São Paulo</div>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+          <a class="nav-link text-white/90 hover:text-white" href="en.html#home">Home</a>
+          <a class="nav-link text-white/90 hover:text-white" href="en.html#institute">The Institute</a>
+          <a class="nav-link text-white/90 hover:text-white" href="en.html#blue-guyana">Blue Guyana</a>
+          <a class="nav-link text-white/90 hover:text-white text-[#C5A46E] font-semibold" href="publications-en.html">Publications</a>
+          <a class="nav-link text-white/90 hover:text-white" href="en.html#contact">Contact</a>
+        </div>
+        <div class="hidden md:flex items-center gap-x-1 text-xs font-medium border border-white/20 rounded-full px-1 py-1">
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications.html">FR</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications-pt.html">PT</a>
+          <a class="px-3 py-1 rounded-full lang-active" href="publications-en.html">EN</a>
+          <a class="px-3 py-1 rounded-full hover:bg-white/10 transition-colors" href="publications-es.html">ES</a>
+        </div>
+        <button aria-label="Open menu" class="md:hidden w-11 h-11 flex items-center justify-center text-white/80 hover:text-white transition-colors" id="mobile-menu-btn" aria-controls="mobile-menu" aria-expanded="false">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden fixed inset-0 z-[60] md:hidden" id="mobile-menu">
+    <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+    <div class="absolute left-0 top-0 bottom-0 w-72 menu-blue shadow-2xl p-6 text-white overflow-y-auto flex flex-col">
+      <div class="flex justify-between items-center mb-8">
+        <span class="font-semibold">Institut Atlantique Sud</span>
+        <button class="text-white/70 hover:text-white" onclick="closeMobileMenu()" aria-label="Close menu"><i class="fa-solid fa-times text-3xl"></i></button>
+      </div>
+      <div class="flex flex-col gap-y-1 text-[15px] flex-1">
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="en.html#home" onclick="closeMobileMenu()">Home</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="en.html#institute" onclick="closeMobileMenu()">The Institute</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="en.html#blue-guyana" onclick="closeMobileMenu()">Blue Guyana</a>
+        <a class="py-3 px-4 bg-white/5 rounded-xl" href="publications-en.html" onclick="closeMobileMenu()">Publications</a>
+        <a class="py-3 px-4 hover:bg-white/5 rounded-xl" href="en.html#contact" onclick="closeMobileMenu()">Contact</a>
+        <div class="mt-5 pt-4 border-t border-white/10 text-xs text-white/50">
+          <div class="px-4 mb-2 text-white/40 uppercase tracking-wider text-[11px]">Other sections</div>
+          <a href="en.html#blue-amazon" class="block py-1.5 px-4" onclick="closeMobileMenu()">Blue Amazon</a>
+          <a href="en.html#cooperation" class="block py-1.5 px-4" onclick="closeMobileMenu()">Cooperation</a>
+          <a href="en.html#critical-minerals" class="block py-1.5 px-4" onclick="closeMobileMenu()">Critical Minerals &amp; Seabed</a>
+          <a href="en.html#governance" class="block py-1.5 px-4" onclick="closeMobileMenu()">Governance &amp; Partners</a>
+          <a href="en.html#team" class="block py-1.5 px-4" onclick="closeMobileMenu()">Founding Team</a>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-center gap-3 text-sm">
+          <a href="publications.html">FR</a> | <a href="publications-pt.html">PT</a> | <a href="publications-en.html" class="text-[#C5A46E] font-semibold">EN</a> | <a href="publications-es.html">ES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <section class="pt-28 pb-12 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-[#C5A46E] text-sm font-semibold tracking-[2px]">ANALYSES &amp; RECOMMENDATIONS</span>
+      <h1 class="heading-serif text-5xl md:text-6xl leading-none tracking-tighter mt-3 mb-6">Publications</h1>
+      <p class="text-xl text-white/70 max-w-2xl mx-auto">Progress notes, working papers, research notes, data and pre-registrations, deposited on Zenodo with a DOI under CC&nbsp;BY&nbsp;4.0, followed by the Institute&rsquo;s positions.</p>
+    </div>
+  </section>
+
+  <!-- DOCUMENTS -->
+  <section class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="space-y-8">
+
+      <!-- PROGRESS NOTES -->
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3">
+        <span class="heading-serif text-2xl md:text-3xl">Progress Notes &mdash; Law 15.506</span>
+        <span class="text-sm text-white/50">One note on the day of each implementing act, with dated predictions</span>
+      </div>
+
+      <article id="progress-note-01" class="dark-card border border-[#C5A46E]/60 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Progress Note No. 1</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.23995336" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Progress Note No. 1 — Law 15.506: Decree 13.146, how the list is decided</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>6 November 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23995336" target="_blank" rel="noopener">10.5281/zenodo.23995336</a></span><span>Whole series: <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23934875" target="_blank" rel="noopener">10.5281/zenodo.23934875</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Decree 13.146 sets the criteria and priority classes by which the council will decide the list of critical or strategic minerals. It makes the reasons for each decision public, except information protected by law, but sets no method for measuring transformation.</p>
+        <a href="https://doi.org/10.5281/zenodo.23995336" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <article id="progress-note-00" class="dark-card border border-[#C5A46E]/60 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Progress Note No. 0</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.23934876" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Progress Note No. 0 — Law 15.506: baseline before the implementing decrees</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>3 November 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23934876" target="_blank" rel="noopener">10.5281/zenodo.23934876</a></span><span>Whole series: <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23934875" target="_blank" rel="noopener">10.5281/zenodo.23934875</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">What the law settles, what remains open, what public trade statistics can verify, and four dated predictions, each with what would prove it wrong. With the file of every figure cited.</p>
+        <a href="https://doi.org/10.5281/zenodo.23934876" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <!-- WORKING PAPERS -->
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3 pt-8">
+        <span class="heading-serif text-2xl md:text-3xl">Working Papers</span>
+        <span class="text-sm text-white/50">Empirical research with replication data and code</span>
+      </div>
+
+      <!-- IAS Working Paper 2026/01 -->
+      <article id="ias-wp-2026-01" class="dark-card border border-[#C5A46E]/60 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">IAS Working Paper 2026/01</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-5" lang="en"><a href="ias-wp-2026-01.html" class="hover:text-[#C5A46E] transition-colors">Who measures conversion: testability, blindness and the missing denominator in Brazil’s critical-minerals doctrine</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>Antoine Bachelin Sena</span>
+          <span>8 September 2026</span>
+          <span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.22567731" target="_blank" rel="noopener">10.5281/zenodo.22567731</a></span>
+          <span>Licence <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener license">CC BY 4.0</a></span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">
+          Brazil’s critical-minerals doctrine names domestic processing as its goal but supplies no measure by which anyone could later establish whether it occurred. This working paper proposes a falsifiable test of conversion and applies it to Comex Stat monthly data for 2016–2025, across eight tariff lines covering lithium, rare earths, niobium and magnets. The test can be run on one line only, spodumene concentrate, and that line returns a commodity reading: no Brazilian line currently validates conversion. The other seven are blind for three distinct reasons — nomenclature, missing industry, market structure — and only the first can be fixed by a customs code. A second route, using destination structure alone, discriminates more cleanly than the price route. The Minaçu rare-earth case, whose operator Serra Verde passed to USA Rare Earth on 3 September 2026, is examined in detail.
+        </p>
+        <div>
+          <a href="ias-wp-2026-01-en.pdf" download class="inline-flex items-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+        </div>
+      </article>
+
+      <!-- RESEARCH NOTES -->
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3 pt-8">
+        <span class="heading-serif text-2xl md:text-3xl">Research Notes</span>
+        <span class="text-sm text-white/50">Results published with their data</span>
+      </div>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Research Note No. 1</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.22898437" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Destination Unspecified: Suriname’s Gold Exports in Partner-Country Trade Statistics, 2019–2025</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>22 September 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.22898437" target="_blank" rel="noopener">10.5281/zenodo.22898437</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Suriname&rsquo;s gold exports compared with what partner countries report importing (UN Comtrade mirror statistics, HS 7108), 2019&ndash;2025.</p>
+        <a href="https://doi.org/10.5281/zenodo.22898437" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Research Note No. 2 &middot; version 1.1</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.23187372" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">The Missing Partner: UAE National Statistics and the Mirror of Suriname’s Gold Exports, 2019–2025</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>6 October 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23187372" target="_blank" rel="noopener">10.5281/zenodo.23187372</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">The UAE&rsquo;s national statistics cover 2024 and 2025, years the UAE did not report to UN Comtrade. Version 1.1 adds an addendum on two Surinamese denominators.</p>
+        <a href="https://doi.org/10.5281/zenodo.23187372" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Research Note No. 3 &middot; pre-registration</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.23186637" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Before the Oil: Suriname’s Gold Economy as a Foreign-Exchange System</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>6 October 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23186637" target="_blank" rel="noopener">10.5281/zenodo.23186637</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Pre-registration of a public test: Suriname&rsquo;s gold economy read as a foreign-exchange system, before oil revenues arrive. Read every six months until 2032.</p>
+        <a href="https://doi.org/10.5281/zenodo.23186637" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <!-- DATA AND MAPS -->
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3 pt-8">
+        <span class="heading-serif text-2xl md:text-3xl">Data and maps</span>
+        <span class="text-sm text-white/50">Versioned datasets, code and maps</span>
+      </div>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Dataset &middot; version 1.3</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.22898405" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Suriname gold mirror-trade monitor (UN Comtrade, HS 7108): protocol, code and derived tables</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>2 November 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.22898405" target="_blank" rel="noopener">10.5281/zenodo.22898405</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Protocol, code and derived tables (UN Comtrade, HS 7108), 2019&ndash;2026. Each reading is a new version; the link always leads to the latest.</p>
+        <a href="https://doi.org/10.5281/zenodo.22898405" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Map and data note &middot; version 1.1</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="fr"><a href="https://doi.org/10.5281/zenodo.22926886" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Guyane bleue / Amazônia Azul — espaces maritimes comparés</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>23 September 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.22926886" target="_blank" rel="noopener">10.5281/zenodo.22926886</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Blue Guyana and Amaz&ocirc;nia Azul at the same scale, distinguishing the recognised shelf from the shelf claimed before the CLCS, with the data note.</p>
+        <a href="https://doi.org/10.5281/zenodo.22926886" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <!-- PRE-REGISTRATIONS -->
+      <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3 pt-8">
+        <span class="heading-serif text-2xl md:text-3xl">Pre-registrations</span>
+        <span class="text-sm text-white/50">Protocols deposited before the results</span>
+      </div>
+
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">Pre-registration No. 1 &middot; version 1.1</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4" lang="en"><a href="https://doi.org/10.5281/zenodo.23348565" target="_blank" rel="noopener" class="hover:text-[#C5A46E] transition-colors">Pre-registration No. 1: Three Registries, Two Rivers</a></h2>
+        <div class="flex flex-wrap gap-x-5 gap-y-1 text-[13px] text-white/60 mb-6">
+          <span>13 October 2026</span><span>DOI <a class="underline decoration-white/30 underline-offset-2 hover:text-[#C5A46E]" href="https://doi.org/10.5281/zenodo.23348565" target="_blank" rel="noopener">10.5281/zenodo.23348565</a></span><span>CC BY 4.0</span>
+        </div>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-7">Protocol for a spatial comparison of the French, Brazilian and Surinamese mining-title registries along the Maroni&ndash;Lawa and the Oyapock. Protocol, no results. First deposited on 23 September 2026.</p>
+        <a href="https://doi.org/10.5281/zenodo.23348565" target="_blank" rel="noopener" class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open on Zenodo
+        </a>
+      </article>
+
+      <!-- NOTES & PROPOSITIONS -->
+      <div id="positions-2026" class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-white/10 pb-3 pt-8">
+        <span class="heading-serif text-2xl md:text-3xl">Positions 2026</span>
+        <span class="text-sm text-white/50">These notes propose; the series above measure.</span>
+      </div>
+
+      <!-- 1. Manifeste -->
+      <article class="dark-card border border-[#C5A46E]/30 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">FOUNDING TEXT · JULY 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Blue Guyana, Blue Amazon</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Manifesto for a Franco-Brazilian doctrine of the South Atlantic. This founding text sets out the strategic vision of the Institut Atlantique Sud: to position Blue Guyana and Blue Amazon as levers of shared sovereignty between France and Brazil in the face of critical dependencies and the geoeconomic competitions of the 21st century.
+        </p>
+        <a href="ias-founding-manifesto-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-[#C5A46E] hover:bg-[#B8955E] text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download the Manifesto (PDF)
+        </a>
+      </article>
+
+      <!-- 2. Note Guyane / Amazonie -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">ANALYTICAL NOTE · JUNE 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Blue Guyana and Blue Amazon</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Analysis of maritime sovereignty, critical minerals and France–Brazil–EU cooperation in the South Atlantic: French Guiana’s exclusive economic zone, the Blue Amazon and Europe’s dependencies on critical raw materials.
+        </p>
+        <a href="ias-blue-guiana-blue-amazon-note-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+      </article>
+
+      <!-- 3. FFEMC -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC PROPOSAL — SOVEREIGN FUND · JUNE 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Franco-European Fund for Critical Minerals of Blue Guyana (FFEMC)</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Proposal for a Franco-European sovereign fund to develop the strategic resources of Blue Guyana and secure Europe’s supply of critical minerals. Aligned with the Critical Raw Materials Act (CRMA), it draws on Guyana’s Natural Resource Fund.
+        </p>
+        <a href="ias-ffemc-proposal-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+      </article>
+
+      <!-- 4. Takaichi -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC STUDY · JUNE 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Sanae Takaichi’s strategy in deep-sea mining</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Analysis of the Japanese deep-sea mining strategy led by Prime Minister Sanae Takaichi, formalized by the Japan–United States Memorandum of Cooperation of March 2026. The study draws concrete lessons for Brazilian sovereignty over the Blue Amazon (5.7 million km²) and the continental shelf extension approved by the CLPC in 2025 (+360,000 km² on the Equatorial Margin). Data verified in May 2026.
+
+        </p>
+        <a href="ias-takaichi-deep-sea-mining-study-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+      </article>
+
+      <!-- 5. Note position minerais -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC POSITION NOTE · JUNE 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">The French strategic context on critical minerals and Guyana</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          This note examines the unprecedented convergence, between 2022 and 2026, of the Varin report, the creation of DIAMMS, the reform of the mining code and Senate report no. 135 on the Guiana Shield. It analyses the structural bottlenecks that weaken this window of opportunity and proposes concrete recommendations to secure it for the benefit of French and European sovereignty.
+        </p>
+        <a href="ias-france-critical-minerals-position-note-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+      </article>
+
+      <!-- 6. Blue Amazon énergie -->
+      <article class="dark-card border border-white/10 rounded-3xl p-8 md:p-10">
+        <div class="text-xs uppercase tracking-widest text-[#C5A46E] mb-3">STRATEGIC NOTE · JUNE 2026</div>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">The Blue Amazon: the energy heart of Brazil in the 21st century</h2>
+        <p class="text-white/75 text-[15px] leading-relaxed mb-6">
+          Brazil’s energy centre of gravity is moving offshore: the note examines offshore oil and gas, the Equatorial Margin and seabed resources, notably the Rio Grande Rise, as conditions for energy sovereignty.
+        </p>
+        <a href="ias-blue-amazon-energy-note-2026-en.pdf" download class="inline-flex items-center gap-x-2 bg-white hover:bg-white/90 text-[#0A1628] font-semibold text-sm px-6 h-11 rounded-2xl transition-all">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </a>
+      </article>
+
+    </div>
+    <p class="text-center text-xs text-white/50 mt-12">
+      All publications are available free of charge. The Institute encourages their dissemination in French, Brazilian and European decision-making circles.
+    </p>
+  </section>
+
+  <footer class="border-t border-white/10 pt-10 pb-8 text-center text-xs text-white/50">
+    © 2026 Institut Atlantique Sud — All rights reserved unless otherwise stated. Works deposited on Zenodo are published under a CC BY 4.0 licence.
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function openMobileMenu() { mobileMenu.classList.remove('hidden'); mobileMenu.classList.add('flex'); mobileBtn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.remove('flex'); mobileMenu.classList.add('hidden'); mobileBtn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    if (mobileBtn) mobileBtn.addEventListener('click', openMobileMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) closeMobileMenu(); });
+  </script>
+</body>
+</html>
